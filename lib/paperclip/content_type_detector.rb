@@ -18,7 +18,8 @@ module Paperclip
     #    a sensible default. This is cached from Step 2.
 
     EMPTY_TYPE = "inode/x-empty"
-    SENSIBLE_DEFAULT = "application/octet-stream"
+    #SENSIBLE_DEFAULT = "application/octet-stream"
+    SENSIBLE_DEFAULT = "application/zip"
 
     def initialize(filepath)
       @filepath = filepath

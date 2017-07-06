@@ -62,7 +62,7 @@ module Paperclip
     def type_from_file_contents
 
       Paperclip.log("type from mime magic: #{type_from_mime_magic.to_s}")
-      Paperclip.log("type from file command: #{type_from_file_command}")
+      #Paperclip.log("type from file command: #{type_from_file_command}")
 
       type_from_mime_magic || type_from_file_command
     rescue Errno::ENOENT => e

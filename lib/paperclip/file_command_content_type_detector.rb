@@ -13,6 +13,8 @@ module Paperclip
     private
 
     def type_from_file_command
+
+      Paperclip.log('Entered type from file command...')
       # On BSDs, `file` doesn't give a result code of 1 if the file doesn't exist.
       type = begin
                Paperclip.run("file", "-b --mime :file", file: @filename)

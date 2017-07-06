@@ -1,6 +1,7 @@
 module Paperclip
   class FileCommandContentTypeDetector
-    SENSIBLE_DEFAULT = "application/octet-stream"
+    #SENSIBLE_DEFAULT = "application/octet-stream"
+    SENSIBLE_DEFAULT = "application/zip"
 
     def initialize(filename)
       @filename = filename
